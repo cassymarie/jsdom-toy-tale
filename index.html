@@ -14,7 +14,7 @@
     </div>
 
     <div class="container">
-      <form class="add-toy-form">
+      <form class="add-toy-form" action="http://localhost:3000/toys" method="POST">
         <h3>Create a toy!</h3>
 
         <input
@@ -23,6 +23,7 @@
           value=""
           placeholder="Enter a toy's name..."
           class="input-text"
+          id = "toy-name"
         />
         <br />
         <input
@@ -31,6 +32,7 @@
           value=""
           placeholder="Enter a toy's image URL..."
           class="input-text"
+          id="toy-image"
         />
         <br />
         <input
@@ -41,11 +43,14 @@
         />
       </form>
     </div>
-    <p style="text-align:center">
-      Andy needs your help! <button id="new-toy-btn">Add a new toy!</button>
-    </p>
 
-    <div id="toy-collection"></div>
+    <p style="text-align:center">
+      Andy needs your help! 
+      <button id="new-toy-btn">Add a new toy!</button>
+    </p>
+    <br>
+    <div id="toy-collection">
+    </div>
     <script type="text/javascript" src="src/index.js"></script>
   </body>
 </html>
